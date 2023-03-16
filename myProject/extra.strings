@@ -1,0 +1,184 @@
+/*
+
+Section(id:1001, question: "Can I rent camping gear?", answer: ["Yes! Camping gear rentals in New Hampshire’s White Mountains are what we do.  No Gear? No Problem."] ),
+Section(id:1002, question:"What is the cancellation policy for rental camping gear?", answer: ["Rental camping gear canceled 10 days before the start of your rental will be given a full refund. Cancel 3 days before the start of your rental for a 50% refund, and 50% store credit. Cancel with less than 3 days before the start of your rental and you will not be given a refund. To cancel a rental order, contact us at 603-726-1702."]),
+Section(id:1003, question: "What is the cancellation policy for guided adventures?", answer: ["A guided adventure cancelled 60 days before the first day of the trip will be given a full refund. A guided adventure cancelled 30 days before the first day of the trip will be given a 50% refund, and 50 % in store credit. Cancel with less than 7 days notice to the first day of the trip and you will not be given a refund. To cancel, contact us at 603-726-1702."]),
+Section(id:1004, question: "What is the cancellation policy for self-guided itineraries?", answer: ["Any cancellation with more than 7 days notice gets full store credit in the amount they paid for the adventure. There will be no cash or credit refunds. With less than 7 days notice, there will be no cancellations. Call 603-726-1702 to cancel."])
+]
+
+
+//
+//  FAQViewController.swift
+//  myProject
+//
+//  Created by Sophia Heinz on 2/17/23.
+//
+
+import UIKit
+import Foundation
+import SwiftUI
+
+class FAQViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+
+    @IBOutlet var table: UITableView!
+    
+    override func viewDidLoad() {
+        let EAgreen = UIColor(named: "EA_green")
+        super.viewDidLoad()
+        view.backgroundColor = EAgreen
+
+        table.delegate = self
+        table.dataSource = self
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        cell.textLabel?.text = "Yes! Camping gear rentals in New Hampshire’s White Mountains are what we do. No Gear? No Problem."
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+       return UITableView.automaticDimension
+    }
+    
+
+   
+
+}
+
+
+//
+//  FAQViewController.swift
+//  myProject
+//
+//  Created by Sophia Heinz on 2/17/23.
+//
+
+import UIKit
+import Foundation
+
+class Section {
+    let id: Int
+    let question: String
+    let answer: [String]
+    var isOpened: Bool = false
+    
+    init(id: Int,
+         question: String,
+         answer: [String],
+         isOpened: Bool = false
+    )
+    {
+        self.id = id
+        self.question = question
+        self.answer = answer
+        self.isOpened = isOpened
+    }
+}
+
+
+
+class FAQViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    let EAgreen = UIColor(named: "EA_green")
+    let EAyellow = UIColor(named: "EA_yellow")
+    
+    private let FAQtableView: UITableView = {
+        let FAQtableView = UITableView()
+        FAQtableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        return FAQtableView
+        
+    }()
+    
+    private var sections = [Section]()
+    
+    func initTableView() {
+       let tableView = UITableView()
+       tableView.frame = self.view.frame
+       tableView.dataSource = self
+       tableView.delegate = self
+       tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+       tableView.estimatedRowHeight = UITableView.automaticDimension
+       self.view.addSubview(tableView)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = EAgreen
+
+        
+        // set up models
+        sections = [
+            Section(id:1001, question: "Can I rent camping gear?", answer: ["Yes! Camping gear rentals in New Hampshire’s White Mountains are what we do.  No Gear? No Problem."] ),
+            Section(id:1002, question:"What is the cancellation policy for rental camping gear?", answer: ["Rental camping gear canceled 10 days before the start of your rental will be given a full refund. Cancel 3 days before the start of your rental for a 50% refund, and 50% store credit. Cancel with less than 3 days before the start of your rental and you will not be given a refund. To cancel a rental order, contact us at 603-726-1702."])
+        ]
+        
+        
+        
+        view.addSubview(FAQtableView)
+        FAQtableView.delegate = self
+        FAQtableView.dataSource = self
+        FAQtableView.frame = view.bounds
+    }
+    
+    //expandable list
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        let section = sections[section]
+        
+        if section.isOpened {
+            return section.answer.count + 1
+        }
+        else {
+            return 1
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = FAQtableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath
+        )
+        if indexPath.row == 0 {
+            cell.textLabel?.text = sections[indexPath.section].question
+            cell.backgroundColor = EAgreen
+
+        }
+        
+        else{
+            cell.textLabel?.text = sections[indexPath.section].answer[indexPath.row - 1]
+            cell.backgroundColor = EAyellow
+        }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        FAQtableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.row == 0 {
+            sections[indexPath.section].isOpened = !sections[indexPath.section].isOpened
+            FAQtableView.reloadSections([indexPath.section], with: .none)
+        }
+        else {
+            print ("tapped sub cell")
+        }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+       return UITableView.automaticDimension
+    }
+    
+}
+*/
