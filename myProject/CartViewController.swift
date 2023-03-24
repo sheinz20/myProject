@@ -1,23 +1,23 @@
 //
-//  HowViewController.swift
+//  CartViewController.swift
 //  myProject
 //
-//  Created by Sophia Heinz on 2/17/23.
+//  Created by Sophia Heinz on 3/23/23.
 //
 
+import Foundation
 import UIKit
 
-class HowViewController: UIViewController {
-
+class CartViewController: UIViewController {
+    
     override func viewDidLoad() {
         let EAyellow = UIColor(named: "EA_yellow")
         let EAgreen = UIColor(named: "EA_green")
+        
         super.viewDidLoad()
         view.backgroundColor = EAgreen
-        
         view.addSubview(backButton)
         view.addSubview(homeButton)
-        view.addSubview(cartButton)
 
     }
     
@@ -40,16 +40,6 @@ class HowViewController: UIViewController {
         return homeButton
     }()
     
-    private let cartButton: UIButton = {
-        let cartButton = UIButton()
-        let cart = UIImage(named: "cart")
-        cartButton.setTitle("cart", for: .normal)
-        cartButton.setImage(cart, for: .normal)
-        cartButton.frame = CGRect(x: 315, y: 65, width: 50, height: 50)
-        cartButton.addTarget(self, action: #selector(cartTapped), for: .touchUpInside)
-        return cartButton
-    }()
-    
     @objc func backTapped() {
         let back_vc = ViewController()
         back_vc.modalPresentationStyle = .fullScreen
@@ -63,12 +53,4 @@ class HowViewController: UIViewController {
         home_vc.modalTransitionStyle = .crossDissolve
         present(home_vc, animated: true)
     }
-    
-    @objc func cartTapped() {
-        let cart_vc = CartViewController()
-        cart_vc.modalPresentationStyle = .fullScreen
-        cart_vc.modalTransitionStyle = .crossDissolve
-        present(cart_vc, animated: true)
-    }
-
 }

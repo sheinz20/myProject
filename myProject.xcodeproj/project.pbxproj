@@ -25,7 +25,10 @@
 		C05E4E1429A1701A00555BE4 /* RentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05E4E1329A1701A00555BE4 /* RentViewController.swift */; };
 		C05E4E1729A5965300555BE4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C05E4E1529A5965300555BE4 /* Model.xcdatamodeld */; };
 		C05E4E7129A9007200555BE4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05E4E7029A9007200555BE4 /* TableViewController.swift */; };
+		C0A8F75029C7A5B500496415 /* FAQcustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8F74F29C7A5B500496415 /* FAQcustomViews.swift */; };
+		C0A9E0E429CC99A600F1FFD9 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A9E0E329CC99A600F1FFD9 /* CartViewController.swift */; };
 		C0F6BA9929C3451E00E6776F /* extra.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0F6BA9829C3451E00E6776F /* extra.strings */; };
+		C0F6BA9B29C522D100E6776F /* SelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6BA9A29C522D100E6776F /* SelfViewController.swift */; };
 		C9EEA2B35DDAC5B43E8203A4 /* Pods_myProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46EA0F29C84DBC3316D2170 /* Pods_myProjectTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,8 +79,11 @@
 		C05E4E1329A1701A00555BE4 /* RentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentViewController.swift; sourceTree = "<group>"; };
 		C05E4E1629A5965300555BE4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		C05E4E7029A9007200555BE4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C0A8F74F29C7A5B500496415 /* FAQcustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQcustomViews.swift; sourceTree = "<group>"; };
+		C0A9E0E329CC99A600F1FFD9 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		C0F6BA9329C2762D00E6776F /* faq_list.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = faq_list.geojson; sourceTree = "<group>"; };
 		C0F6BA9829C3451E00E6776F /* extra.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = extra.strings; sourceTree = "<group>"; };
+		C0F6BA9A29C522D100E6776F /* SelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfViewController.swift; sourceTree = "<group>"; };
 		F4C7C8C1CAD124F3039C76B5 /* Pods-myProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-myProjectTests/Pods-myProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,11 +143,14 @@
 				C05E4DD429A02EE600555BE4 /* AppDelegate.swift */,
 				C05E4DD629A02EE600555BE4 /* SceneDelegate.swift */,
 				C05E4DD829A02EE600555BE4 /* ViewController.swift */,
+				C0A9E0E329CC99A600F1FFD9 /* CartViewController.swift */,
 				C05E4E0629A03E1E00555BE4 /* GearViewController.swift */,
 				C05E4E1329A1701A00555BE4 /* RentViewController.swift */,
 				C05E4E0B29A052B700555BE4 /* AdventuresViewController.swift */,
+				C0F6BA9A29C522D100E6776F /* SelfViewController.swift */,
 				C05E4E0D29A0531700555BE4 /* HowViewController.swift */,
 				C05E4E1129A06B7700555BE4 /* FAQViewController.swift */,
+				C0A8F74F29C7A5B500496415 /* FAQcustomViews.swift */,
 				C05E4E7029A9007200555BE4 /* TableViewController.swift */,
 				C05E4DDA29A02EE600555BE4 /* Main.storyboard */,
 				C0F6BA9329C2762D00E6776F /* faq_list.geojson */,
@@ -443,13 +452,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F6BA9B29C522D100E6776F /* SelfViewController.swift in Sources */,
 				C05E4DD929A02EE600555BE4 /* ViewController.swift in Sources */,
 				C05E4E0E29A0531700555BE4 /* HowViewController.swift in Sources */,
 				C05E4E0C29A052B700555BE4 /* AdventuresViewController.swift in Sources */,
 				C05E4E7129A9007200555BE4 /* TableViewController.swift in Sources */,
 				C05E4DD529A02EE600555BE4 /* AppDelegate.swift in Sources */,
+				C0A9E0E429CC99A600F1FFD9 /* CartViewController.swift in Sources */,
 				C05E4E1229A06B7700555BE4 /* FAQViewController.swift in Sources */,
 				C05E4E1729A5965300555BE4 /* Model.xcdatamodeld in Sources */,
+				C0A8F75029C7A5B500496415 /* FAQcustomViews.swift in Sources */,
 				C05E4E0729A03E1E00555BE4 /* GearViewController.swift in Sources */,
 				C05E4E1429A1701A00555BE4 /* RentViewController.swift in Sources */,
 				C05E4DD729A02EE600555BE4 /* SceneDelegate.swift in Sources */,
