@@ -2,60 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Product+CoreDataClass.swift">
-   </FileRef>
-   <FileRef
-      location = "group:Product+CoreDataProperties.swift">
-   </FileRef>
-   <FileRef
-      location = "group:Customer+CoreDataClass.swift">
-   </FileRef>
-   <FileRef
-      location = "group:Customer+CoreDataProperties.swift">
-   </FileRef>
-   <FileRef
-      location = "group:Lockers+CoreDataClass.swift">
-   </FileRef>
-   <FileRef
-      location = "group:Lockers+CoreDataProperties.swift">
-   </FileRef>
-   <FileRef
-      location = "group:Building+CoreDataClass.swift">
-   </FileRef>
-   <FileRef
-      location = "group:Building+CoreDataProperties.swift">
-   </FileRef>
-   <FileRef
-      location = "group:Order+CoreDataClass.swift">
-   </FileRef>
-   <FileRef
-      location = "group:Order+CoreDataProperties.swift">
-   </FileRef>
-   <FileRef
-      location = "group:myProject/Model/Building+CoreDataClass.swift">
-   </FileRef>
-   <FileRef
-      location = "group:myProject/Model/Building+CoreDataProperties.swift">
-   </FileRef>
-   <FileRef
-      location = "group:myProject/Model/Lockers+CoreDataClass.swift">
-   </FileRef>
-   <FileRef
-      location = "group:myProject/Model/Lockers+CoreDataProperties.swift">
-   </FileRef>
-   <FileRef
-      location = "group:myProject/Model/Product+CoreDataClass.swift">
-   </FileRef>
-   <FileRef
-      location = "group:myProject/Model/Product+CoreDataProperties.swift">
-   </FileRef>
-   <FileRef
-      location = "group:myProject/Model/Customer+CoreDataClass.swift">
-   </FileRef>
-   <FileRef
-      location = "group:myProject/Model/Customer+CoreDataProperties.swift">
-   </FileRef>
-   <FileRef
       location = "group:myProject.xcodeproj">
    </FileRef>
    <FileRef

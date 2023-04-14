@@ -1,8 +1,8 @@
 //
 //  Order+CoreDataProperties.swift
-//  
+//  myProject
 //
-//  Created by Sophia Heinz on 3/23/23.
+//  Created by Sophia Heinz on 3/29/23.
 //
 //
 
@@ -22,5 +22,9 @@ extension Order {
     @NSManaged public var orderID: Int64
     @NSManaged public var totalAmount: NSDecimalNumber?
     @NSManaged public var whichLocker: Lockers?
+
+}
+
+extension Order : Identifiable {
 
 }

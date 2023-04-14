@@ -1,16 +1,20 @@
 PODS:
   - DropDown (2.3.13)
+  - youtube-ios-player-helper (1.0.4)
 
 DEPENDENCIES:
   - DropDown
+  - youtube-ios-player-helper
 
 SPEC REPOS:
   trunk:
     - DropDown
+    - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
 
-PODFILE CHECKSUM: e9c1eb9fc4f66e4236793617a98499d3c4214593
+PODFILE CHECKSUM: c8c9d8acb94b1a2163cba1d1cdb68835b0206e21
 
 COCOAPODS: 1.11.3

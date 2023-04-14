@@ -11,7 +11,6 @@ import UIKit
 class CartViewController: UIViewController {
     
     override func viewDidLoad() {
-        let EAyellow = UIColor(named: "EA_yellow")
         let EAgreen = UIColor(named: "EA_green")
         
         super.viewDidLoad()

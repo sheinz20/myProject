@@ -1,8 +1,8 @@
 //
 //  Customer+CoreDataClass.swift
-//  
+//  myProject
 //
-//  Created by Sophia Heinz on 3/23/23.
+//  Created by Sophia Heinz on 3/29/23.
 //
 //
 

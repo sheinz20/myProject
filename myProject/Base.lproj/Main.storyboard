@@ -12,6 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="back_vc" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="myProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -21,13 +22,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="haq-O7-iA5"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1063.3587786259541" y="3.5211267605633805"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6HI-OI-hia">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wrN-lv-g4Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZTV-ht-2Qj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cAB-uf-kzz">
@@ -39,7 +40,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7tX-we-put"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wrN-lv-g4Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
         </scene>

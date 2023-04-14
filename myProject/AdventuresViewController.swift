@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import WebKit
 
 let EAgreen = UIColor(named: "EA_green")
 let EAyellow = UIColor(named: "EA_yellow")
 
 class AdventuresViewController: UIViewController {
+    
+    let webView = WKWebView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +25,21 @@ class AdventuresViewController: UIViewController {
         view.addSubview(backButton)
         view.addSubview(homeButton)
         view.addSubview(cartButton)
-
+        
+        view.addSubview(webView)
+        
+        guard let url = URL(string: "https://book.peek.com/s/1f0ba8ea-cdc1-4c6b-b069-2cac56978a3e/XDEXx?gaClientId=20334242.1661379370") else {
+            return
+        }
+        webView.load(URLRequest(url: url))
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        webView.frame = view.bounds
+    }
+
+    
     
     private let selfButton: UIButton = {
         let selfButton = UIButton()

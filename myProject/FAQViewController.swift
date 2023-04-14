@@ -17,6 +17,8 @@ class FAQViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let EAgreen = UIColor(named: "EA_green")
+        
+        //tableView.rowHeight = UITableView.automaticDimension
 
         view.backgroundColor = EAgreen
         setupTableView()

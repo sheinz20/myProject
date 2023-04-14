@@ -8,11 +8,12 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController {
-    let EAgreen = UIColor(named: "EA_green")
-    let EAyellow = UIColor(named: "EA_yellow")
+//let EAgreen = UIColor(named: "EA_green")
+//let EAyellow = UIColor(named: "EA_yellow")
 
-        
+class ViewController: UIViewController {
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = EAgreen
@@ -23,30 +24,32 @@ class ViewController: UIViewController {
         view.addSubview(FAQButton)
         view.addSubview(phoneButton)
         view.addSubview(homeButton)
-        view.addSubview(cartButton)
-        
-        let label = UILabel(frame: CGRect(x: 156, y: 70, width: 200, height: 20))
-        label.text = "Effortless"
-        label.textColor = EAyellow
-        label.font = .boldSystemFont(ofSize: 20)
-        let label1 = UILabel(frame: CGRect(x: 153, y: 92, width: 200, height: 20))
-        label1.text = "Adventure"
-        label1.textColor = EAyellow
-        label1.font = .boldSystemFont(ofSize: 20)
-        view.addSubview(label)
-        view.addSubview(label1)
+        view.addSubview(pageTitle)
 
-        
-
+        addConstraints()
     }
+    
+    let pageTitle: UILabel = {
+       let pageTitle = UILabel()
+        pageTitle.text = "Effortless Adventure"
+        pageTitle.textColor = EAyellow
+        pageTitle.font = .boldSystemFont(ofSize: 20)
+        pageTitle.textAlignment = .center
+        pageTitle.translatesAutoresizingMaskIntoConstraints = false    //autolayout
+
+        return pageTitle
+    }()
     
     private let gearButton: UIButton = {
         let gearButton = UIButton()
         let GearImage = UIImage(named: "Gear")
         gearButton.setTitle("Gear", for: .normal)
         gearButton.setImage(GearImage, for: .normal)
-        gearButton.frame = CGRect(x: 30, y: 155, width: 335, height: 175)
-        gearButton.layer.cornerRadius = 25
+        //gearButton.layer.cornerRadius = 25
+        //gearButton.layer.borderWidth = 2
+        //gearButton.layer.borderColor = UIColor.yellow
+        //gearButton.contentMode = .scaleAspectFit
+        gearButton.translatesAutoresizingMaskIntoConstraints = false    //autolayout
         gearButton.addTarget(self, action: #selector(gearTapped), for: .touchUpInside)
         return gearButton
     }()
@@ -56,9 +59,7 @@ class ViewController: UIViewController {
         let AdvenImage = UIImage(named: "Adventure")
         advenButton.setTitle("Adventures", for: .normal)
         advenButton.setImage(AdvenImage, for: .normal)
-        //advenButton.layer.borderColor = .yellow
-        advenButton.frame = CGRect(x: 30, y: 360, width: 335, height: 175)
-        advenButton.layer.cornerRadius = 50
+        advenButton.translatesAutoresizingMaskIntoConstraints = false    //autolayout
         advenButton.addTarget(self, action: #selector(advenTapped), for: .touchUpInside)
         return advenButton
     }()
@@ -68,8 +69,7 @@ class ViewController: UIViewController {
         let HowImage = UIImage(named: "How")
         howButton.setTitle("How it works", for: .normal)
         howButton.setImage(HowImage, for: .normal)
-        howButton.frame = CGRect(x: 30, y: 565, width: 335, height: 175)
-        howButton.layer.cornerRadius = 25
+        howButton.translatesAutoresizingMaskIntoConstraints = false    //autolayout
         howButton.addTarget(self, action: #selector(howTapped), for: .touchUpInside)
         return howButton
     }()
@@ -79,7 +79,8 @@ class ViewController: UIViewController {
         let EAyellow = UIColor(named: "EA_yellow")
         FAQButton.setTitle("FAQ's", for: .normal)
         FAQButton.setTitleColor(EAyellow, for: .normal)
-        FAQButton.frame = CGRect(x: 60, y: 790, width: 75, height: 25)
+        //FAQButton.frame = CGRect(x: 60, y: 790, width: 75, height: 25)
+        FAQButton.translatesAutoresizingMaskIntoConstraints = false    //autolayout
         FAQButton.addTarget(self, action: #selector(FAQTapped), for: .touchUpInside)
         return FAQButton
     }()
@@ -89,7 +90,8 @@ class ViewController: UIViewController {
         let EAyellow = UIColor(named: "EA_yellow")
         phoneButton.setTitle("Contact Us", for: .normal)
         phoneButton.setTitleColor(EAyellow, for: .normal)
-        phoneButton.frame = CGRect(x: 240, y: 790, width: 100, height: 25)
+        //phoneButton.frame = CGRect(x: 240, y: 790, width: 100, height: 25)
+        phoneButton.translatesAutoresizingMaskIntoConstraints = false    //autolayout
         phoneButton.addTarget(self, action: #selector(phoneTapped), for: .touchUpInside)
         return phoneButton
     }()
@@ -99,19 +101,10 @@ class ViewController: UIViewController {
         let logo = UIImage(named: "logo")
         homeButton.setTitle("home", for: .normal)
         homeButton.setImage(logo, for: .normal)
-        homeButton.frame = CGRect(x: 25, y: 50, width: 75, height: 75)
+        homeButton.translatesAutoresizingMaskIntoConstraints = false    //autolayout
+
         homeButton.addTarget(self, action: #selector(homeTapped), for: .touchUpInside)
         return homeButton
-    }()
-    
-    private let cartButton: UIButton = {
-        let cartButton = UIButton()
-        let cart = UIImage(named: "cart")
-        cartButton.setTitle("cart", for: .normal)
-        cartButton.setImage(cart, for: .normal)
-        cartButton.frame = CGRect(x: 305, y: 66, width: 50, height: 50)
-        cartButton.addTarget(self, action: #selector(cartTapped), for: .touchUpInside)
-        return cartButton
     }()
     
     @objc func gearTapped() {
@@ -152,26 +145,65 @@ class ViewController: UIViewController {
         present(home_vc, animated: true)
     }
     
-    @objc func cartTapped() {
-        let cart_vc = CartViewController()
-        cart_vc.modalPresentationStyle = .fullScreen
-        cart_vc.modalTransitionStyle = .crossDissolve
-        present(cart_vc, animated: true)
+   
+    private func addConstraints() {
+        var constraints = [NSLayoutConstraint]()
+        //gear button
+        //constraints.append(gearButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 30 ))
+        //constraints.append(gearButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30))
+        //constraints.append(gearButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -525))
+        constraints.append(gearButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80))
+        constraints.append(gearButton.centerXAnchor.constraint(equalTo: view.centerXAnchor))
+        constraints.append(gearButton.widthAnchor.constraint(equalToConstant: 320))
+        constraints.append(gearButton.heightAnchor.constraint(equalToConstant: 190))
+        
+        //adven button
+        //constraints.append(advenButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 30))
+        //constraints.append(advenButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30))
+        //constraints.append(advenButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -305))
+        //constraints.append(advenButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 280))
+        constraints.append(advenButton.topAnchor.constraint(equalTo: gearButton.bottomAnchor, constant: 30))
+        constraints.append(advenButton.centerXAnchor.constraint(equalTo: view.centerXAnchor))
+        constraints.append(advenButton.widthAnchor.constraint(equalToConstant: 320))
+        constraints.append(advenButton.heightAnchor.constraint(equalToConstant: 190))
+        
+        //how button
+        //constraints.append(howButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 30))
+        //constraints.append(howButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30))
+        //constraints.append(howButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -85))
+        //constraints.append(howButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 500))
+        constraints.append(howButton.topAnchor.constraint(equalTo: advenButton.bottomAnchor, constant: 30))
+        constraints.append(howButton.centerXAnchor.constraint(equalTo: view.centerXAnchor))
+        constraints.append(howButton.widthAnchor.constraint(equalToConstant: 320))
+        constraints.append(howButton.heightAnchor.constraint(equalToConstant: 190))
+        
+        
+        //faq button
+        constraints.append(FAQButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 60))
+        constraints.append(FAQButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -300))
+        constraints.append(FAQButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50))
+        constraints.append(FAQButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 750))
+        
+        //phone button
+        constraints.append(phoneButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 270))
+        constraints.append(phoneButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -45))
+        constraints.append(phoneButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50))
+        constraints.append(phoneButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 750))
+        
+        //page title
+        constraints.append(pageTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor))
+        constraints.append(pageTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30))
+        
+        //home button
+        constraints.append(homeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor))
+        constraints.append(homeButton.bottomAnchor.constraint(equalTo: pageTitle.topAnchor))
+        constraints.append(homeButton.widthAnchor.constraint(equalToConstant: 75))
+        constraints.append(homeButton.heightAnchor.constraint(equalToConstant: 75))
+        
+        NSLayoutConstraint.activate(constraints)
     }
-   /*
-    var name = [name]() //fooditem food
-    var moc:NSManagedObjectContext!
-    let appDelegate = UIApplication.shared.delegate as? AppDelegate
-
-    @IBAction func addCustomerToDatabase (_ sender: UIButton) {
-        let name = Name(context: moc)
-        name.added = NSData()
     
     }
-    */
     
-    }
-    
-
 
 

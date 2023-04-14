@@ -10,6 +10,8 @@ import UIKit
 
 class FAQDropCell: UITableViewCell {
     
+    
+    
     var data: FAQlist? {
         didSet {
             guard let data = data else { return }

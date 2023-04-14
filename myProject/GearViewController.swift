@@ -6,9 +6,14 @@
 //
 
 import UIKit
+import WebKit
 
 class GearViewController: UIViewController {
     let EAgreen = UIColor(named: "EA_green")
+    
+    let webView = WKWebView()
+
+    var products: [Product] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +22,30 @@ class GearViewController: UIViewController {
         view.addSubview(backButton)
         view.addSubview(homeButton)
         view.addSubview(cartButton)
+        
+        view.addSubview(webView)
+        
+        guard let url = URL(string: "https://book.peek.com/s/1f0ba8ea-cdc1-4c6b-b069-2cac56978a3e/9oDE9?gaClientId=20334242.1661379370") else {
+            return
+        }
+        webView.load(URLRequest(url: url))
+        webView.backgroundColor = EAgreen
 
+        let html = """
+        <html>
+        <body>
+        <h1>Hello, Swift!</h1>
+        </body>
+        </html>
+        """
 
+        // webView.loadHTMLString(html, baseURL: nil)
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        webView.frame = view.bounds
     }
     
     private let homeButton: UIButton = {

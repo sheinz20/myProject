@@ -1,8 +1,8 @@
 //
 //  Lockers+CoreDataProperties.swift
-//  
+//  myProject
 //
-//  Created by Sophia Heinz on 3/23/23.
+//  Created by Sophia Heinz on 3/29/23.
 //
 //
 
@@ -21,6 +21,9 @@ extension Lockers {
     @NSManaged public var lockerCode: Int64
     @NSManaged public var lockerID: Int64
     @NSManaged public var orderID: Int64
-    @NSManaged public var whichOrder: Order?
+
+}
+
+extension Lockers : Identifiable {
 
 }

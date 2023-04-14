@@ -22,11 +22,24 @@
 		C05E4E0C29A052B700555BE4 /* AdventuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05E4E0B29A052B700555BE4 /* AdventuresViewController.swift */; };
 		C05E4E0E29A0531700555BE4 /* HowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05E4E0D29A0531700555BE4 /* HowViewController.swift */; };
 		C05E4E1229A06B7700555BE4 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05E4E1129A06B7700555BE4 /* FAQViewController.swift */; };
-		C05E4E1429A1701A00555BE4 /* RentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05E4E1329A1701A00555BE4 /* RentViewController.swift */; };
 		C05E4E1729A5965300555BE4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C05E4E1529A5965300555BE4 /* Model.xcdatamodeld */; };
 		C05E4E7129A9007200555BE4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05E4E7029A9007200555BE4 /* TableViewController.swift */; };
 		C0A8F75029C7A5B500496415 /* FAQcustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8F74F29C7A5B500496415 /* FAQcustomViews.swift */; };
 		C0A9E0E429CC99A600F1FFD9 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A9E0E329CC99A600F1FFD9 /* CartViewController.swift */; };
+		C0A9E11B29D4DDE800F1FFD9 /* Building+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A9E11129D4DDE800F1FFD9 /* Building+CoreDataClass.swift */; };
+		C0A9E11C29D4DDE800F1FFD9 /* Building+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A9E11229D4DDE800F1FFD9 /* Building+CoreDataProperties.swift */; };
+		C0A9E11D29D4DDE800F1FFD9 /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A9E11329D4DDE800F1FFD9 /* Order+CoreDataClass.swift */; };
+		C0A9E11E29D4DDE800F1FFD9 /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A9E11429D4DDE800F1FFD9 /* Order+CoreDataProperties.swift */; };
+		C0A9E11F29D4DDE800F1FFD9 /* Lockers+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A9E11529D4DDE800F1FFD9 /* Lockers+CoreDataClass.swift */; };
+		C0A9E12029D4DDE800F1FFD9 /* Lockers+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A9E11629D4DDE800F1FFD9 /* Lockers+CoreDataProperties.swift */; };
+		C0A9E12129D4DDE800F1FFD9 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A9E11729D4DDE800F1FFD9 /* Product+CoreDataClass.swift */; };
+		C0A9E12229D4DDE800F1FFD9 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A9E11829D4DDE800F1FFD9 /* Product+CoreDataProperties.swift */; };
+		C0A9E12329D4DDE800F1FFD9 /* Customer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A9E11929D4DDE800F1FFD9 /* Customer+CoreDataClass.swift */; };
+		C0A9E12429D4DDE800F1FFD9 /* Customer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A9E11A29D4DDE800F1FFD9 /* Customer+CoreDataProperties.swift */; };
+		C0A9E12629D5B8E100F1FFD9 /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A9E12529D5B8E100F1FFD9 /* Gear.swift */; };
+		C0A9E12829D65D2400F1FFD9 /* products.csv in Resources */ = {isa = PBXBuildFile; fileRef = C0A9E12729D65D2400F1FFD9 /* products.csv */; };
+		C0A9E12A29D65E1B00F1FFD9 /* GearTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A9E12929D65E1B00F1FFD9 /* GearTableView.swift */; };
+		C0A9E12C29D66B2600F1FFD9 /* GearTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A9E12B29D66B2600F1FFD9 /* GearTableViewCell.swift */; };
 		C0F6BA9929C3451E00E6776F /* extra.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0F6BA9829C3451E00E6776F /* extra.strings */; };
 		C0F6BA9B29C522D100E6776F /* SelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6BA9A29C522D100E6776F /* SelfViewController.swift */; };
 		C9EEA2B35DDAC5B43E8203A4 /* Pods_myProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46EA0F29C84DBC3316D2170 /* Pods_myProjectTests.framework */; };
@@ -76,11 +89,24 @@
 		C05E4E0B29A052B700555BE4 /* AdventuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventuresViewController.swift; sourceTree = "<group>"; };
 		C05E4E0D29A0531700555BE4 /* HowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowViewController.swift; sourceTree = "<group>"; };
 		C05E4E1129A06B7700555BE4 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
-		C05E4E1329A1701A00555BE4 /* RentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentViewController.swift; sourceTree = "<group>"; };
 		C05E4E1629A5965300555BE4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		C05E4E7029A9007200555BE4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		C0A8F74F29C7A5B500496415 /* FAQcustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQcustomViews.swift; sourceTree = "<group>"; };
 		C0A9E0E329CC99A600F1FFD9 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		C0A9E11129D4DDE800F1FFD9 /* Building+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Building+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C0A9E11229D4DDE800F1FFD9 /* Building+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Building+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C0A9E11329D4DDE800F1FFD9 /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C0A9E11429D4DDE800F1FFD9 /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C0A9E11529D4DDE800F1FFD9 /* Lockers+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lockers+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C0A9E11629D4DDE800F1FFD9 /* Lockers+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lockers+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C0A9E11729D4DDE800F1FFD9 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C0A9E11829D4DDE800F1FFD9 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C0A9E11929D4DDE800F1FFD9 /* Customer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C0A9E11A29D4DDE800F1FFD9 /* Customer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C0A9E12529D5B8E100F1FFD9 /* Gear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gear.swift; sourceTree = "<group>"; };
+		C0A9E12729D65D2400F1FFD9 /* products.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = products.csv; path = ../../../../Documents/products.csv; sourceTree = "<group>"; };
+		C0A9E12929D65E1B00F1FFD9 /* GearTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearTableView.swift; sourceTree = "<group>"; };
+		C0A9E12B29D66B2600F1FFD9 /* GearTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearTableViewCell.swift; sourceTree = "<group>"; };
 		C0F6BA9329C2762D00E6776F /* faq_list.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = faq_list.geojson; sourceTree = "<group>"; };
 		C0F6BA9829C3451E00E6776F /* extra.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = extra.strings; sourceTree = "<group>"; };
 		C0F6BA9A29C522D100E6776F /* SelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +171,9 @@
 				C05E4DD829A02EE600555BE4 /* ViewController.swift */,
 				C0A9E0E329CC99A600F1FFD9 /* CartViewController.swift */,
 				C05E4E0629A03E1E00555BE4 /* GearViewController.swift */,
-				C05E4E1329A1701A00555BE4 /* RentViewController.swift */,
+				C0A9E12929D65E1B00F1FFD9 /* GearTableView.swift */,
+				C0A9E12B29D66B2600F1FFD9 /* GearTableViewCell.swift */,
+				C0A9E12529D5B8E100F1FFD9 /* Gear.swift */,
 				C05E4E0B29A052B700555BE4 /* AdventuresViewController.swift */,
 				C0F6BA9A29C522D100E6776F /* SelfViewController.swift */,
 				C05E4E0D29A0531700555BE4 /* HowViewController.swift */,
@@ -184,7 +212,18 @@
 		C05E4E1829A59B0800555BE4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C0A9E11129D4DDE800F1FFD9 /* Building+CoreDataClass.swift */,
+				C0A9E11229D4DDE800F1FFD9 /* Building+CoreDataProperties.swift */,
+				C0A9E11329D4DDE800F1FFD9 /* Order+CoreDataClass.swift */,
+				C0A9E11429D4DDE800F1FFD9 /* Order+CoreDataProperties.swift */,
+				C0A9E11529D4DDE800F1FFD9 /* Lockers+CoreDataClass.swift */,
+				C0A9E11629D4DDE800F1FFD9 /* Lockers+CoreDataProperties.swift */,
+				C0A9E11729D4DDE800F1FFD9 /* Product+CoreDataClass.swift */,
+				C0A9E11829D4DDE800F1FFD9 /* Product+CoreDataProperties.swift */,
+				C0A9E11929D4DDE800F1FFD9 /* Customer+CoreDataClass.swift */,
+				C0A9E11A29D4DDE800F1FFD9 /* Customer+CoreDataProperties.swift */,
 				C05E4E1529A5965300555BE4 /* Model.xcdatamodeld */,
+				C0A9E12729D65D2400F1FFD9 /* products.csv */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -324,6 +363,7 @@
 				C05E4DE129A02EE800555BE4 /* LaunchScreen.storyboard in Resources */,
 				C0F6BA9929C3451E00E6776F /* extra.strings in Resources */,
 				C05E4DDE29A02EE800555BE4 /* Assets.xcassets in Resources */,
+				C0A9E12829D65D2400F1FFD9 /* products.csv in Resources */,
 				C05E4DDC29A02EE600555BE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,19 +492,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0A9E12A29D65E1B00F1FFD9 /* GearTableView.swift in Sources */,
 				C0F6BA9B29C522D100E6776F /* SelfViewController.swift in Sources */,
+				C0A9E11F29D4DDE800F1FFD9 /* Lockers+CoreDataClass.swift in Sources */,
 				C05E4DD929A02EE600555BE4 /* ViewController.swift in Sources */,
+				C0A9E12129D4DDE800F1FFD9 /* Product+CoreDataClass.swift in Sources */,
 				C05E4E0E29A0531700555BE4 /* HowViewController.swift in Sources */,
+				C0A9E11E29D4DDE800F1FFD9 /* Order+CoreDataProperties.swift in Sources */,
 				C05E4E0C29A052B700555BE4 /* AdventuresViewController.swift in Sources */,
+				C0A9E12029D4DDE800F1FFD9 /* Lockers+CoreDataProperties.swift in Sources */,
+				C0A9E11D29D4DDE800F1FFD9 /* Order+CoreDataClass.swift in Sources */,
 				C05E4E7129A9007200555BE4 /* TableViewController.swift in Sources */,
 				C05E4DD529A02EE600555BE4 /* AppDelegate.swift in Sources */,
 				C0A9E0E429CC99A600F1FFD9 /* CartViewController.swift in Sources */,
 				C05E4E1229A06B7700555BE4 /* FAQViewController.swift in Sources */,
 				C05E4E1729A5965300555BE4 /* Model.xcdatamodeld in Sources */,
 				C0A8F75029C7A5B500496415 /* FAQcustomViews.swift in Sources */,
+				C0A9E12629D5B8E100F1FFD9 /* Gear.swift in Sources */,
+				C0A9E12329D4DDE800F1FFD9 /* Customer+CoreDataClass.swift in Sources */,
 				C05E4E0729A03E1E00555BE4 /* GearViewController.swift in Sources */,
-				C05E4E1429A1701A00555BE4 /* RentViewController.swift in Sources */,
+				C0A9E12429D4DDE800F1FFD9 /* Customer+CoreDataProperties.swift in Sources */,
+				C0A9E12229D4DDE800F1FFD9 /* Product+CoreDataProperties.swift in Sources */,
 				C05E4DD729A02EE600555BE4 /* SceneDelegate.swift in Sources */,
+				C0A9E11C29D4DDE800F1FFD9 /* Building+CoreDataProperties.swift in Sources */,
+				C0A9E11B29D4DDE800F1FFD9 /* Building+CoreDataClass.swift in Sources */,
+				C0A9E12C29D66B2600F1FFD9 /* GearTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,8 +1,8 @@
 //
 //  Building+CoreDataProperties.swift
-//  
+//  myProject
 //
-//  Created by Sophia Heinz on 3/23/23.
+//  Created by Sophia Heinz on 3/29/23.
 //
 //
 
@@ -19,5 +19,9 @@ extension Building {
     @NSManaged public var address: String?
     @NSManaged public var buildingID: Int64
     @NSManaged public var doorCode: Int64
+
+}
+
+extension Building : Identifiable {
 
 }

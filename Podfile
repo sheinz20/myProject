@@ -17,5 +17,6 @@ target 'myProject' do
   end
 
 pod 'DropDown'
+pod 'youtube-ios-player-helper'
 
 end

@@ -6,21 +6,49 @@
 //
 
 import UIKit
+import youtube_ios_player_helper
+import WebKit
 
 class HowViewController: UIViewController {
-
+    
     override func viewDidLoad() {
-        let EAyellow = UIColor(named: "EA_yellow")
         let EAgreen = UIColor(named: "EA_green")
         super.viewDidLoad()
         view.backgroundColor = EAgreen
         
         view.addSubview(backButton)
         view.addSubview(homeButton)
-        view.addSubview(cartButton)
-
+        view.addSubview(pageTitle)
+        view.addSubview(videoView)
+        
+        
+        addConstraints()
+        
     }
+
+//page title
+    private let pageTitle: UILabel = {
+        let pageTitle = UILabel()
+        pageTitle.text = "How it Works"
+        pageTitle.textColor = EAyellow
+        pageTitle.textAlignment = .center
+        pageTitle.font = .boldSystemFont(ofSize: 30)
+        pageTitle.translatesAutoresizingMaskIntoConstraints = false
+        return pageTitle
+    }()
     
+    
+//youtube video
+    private let videoView: YTPlayerView = {
+        let videoView = YTPlayerView()
+        videoView.load(withVideoId: "ECXsEU9erWY")
+        videoView.backgroundColor = EAgreen
+        videoView.translatesAutoresizingMaskIntoConstraints = false    //autolayout
+
+        return videoView
+    }()
+  
+//button navigation
     private let backButton: UIButton = {
         let backButton = UIButton()
         backButton.setTitle("< Back", for: .normal)
@@ -35,19 +63,10 @@ class HowViewController: UIViewController {
         let logo = UIImage(named: "logo")
         homeButton.setTitle("home", for: .normal)
         homeButton.setImage(logo, for: .normal)
-        homeButton.frame = CGRect(x: 25, y: 50, width: 75, height: 75)
+        homeButton.translatesAutoresizingMaskIntoConstraints = false    //autolayout
+
         homeButton.addTarget(self, action: #selector(homeTapped), for: .touchUpInside)
         return homeButton
-    }()
-    
-    private let cartButton: UIButton = {
-        let cartButton = UIButton()
-        let cart = UIImage(named: "cart")
-        cartButton.setTitle("cart", for: .normal)
-        cartButton.setImage(cart, for: .normal)
-        cartButton.frame = CGRect(x: 315, y: 65, width: 50, height: 50)
-        cartButton.addTarget(self, action: #selector(cartTapped), for: .touchUpInside)
-        return cartButton
     }()
     
     @objc func backTapped() {
@@ -63,12 +82,27 @@ class HowViewController: UIViewController {
         home_vc.modalTransitionStyle = .crossDissolve
         present(home_vc, animated: true)
     }
-    
-    @objc func cartTapped() {
-        let cart_vc = CartViewController()
-        cart_vc.modalPresentationStyle = .fullScreen
-        cart_vc.modalTransitionStyle = .crossDissolve
-        present(cart_vc, animated: true)
-    }
 
+    private func addConstraints() {
+        var constraints = [NSLayoutConstraint]()
+        
+        //page title
+        constraints.append(pageTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor))
+        constraints.append(pageTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 130))
+        
+        //youtibe video
+        constraints.append(videoView.centerXAnchor.constraint(equalTo: view.centerXAnchor))
+        constraints.append(videoView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 200))
+        constraints.append(videoView.widthAnchor.constraint(equalToConstant: 335))
+        constraints.append(videoView.heightAnchor.constraint(equalToConstant: 200))
+        
+        //home button
+        constraints.append(homeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor))
+        constraints.append(homeButton.bottomAnchor.constraint(equalTo: pageTitle.topAnchor))
+        constraints.append(homeButton.widthAnchor.constraint(equalToConstant: 75))
+        constraints.append(homeButton.heightAnchor.constraint(equalToConstant: 75))
+        
+        NSLayoutConstraint.activate(constraints)
+
+    }
 }

@@ -1,8 +1,8 @@
 //
 //  Customer+CoreDataProperties.swift
-//  
+//  myProject
 //
-//  Created by Sophia Heinz on 3/23/23.
+//  Created by Sophia Heinz on 3/29/23.
 //
 //
 
@@ -20,5 +20,9 @@ extension Customer {
     @NSManaged public var email: String?
     @NSManaged public var name: String?
     @NSManaged public var phone: Int64
+
+}
+
+extension Customer : Identifiable {
 
 }
