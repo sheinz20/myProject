@@ -6,139 +6,129 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E9B510EF30FAA1AED202391C7B2063FB /* Build configuration list for PBXAggregateTarget "DropDown" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = DropDown;
+			productName = DropDown;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		013B5160C34A691EC32DBE492CBD24F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		08E06C696103054C4B32302B72F87F9B /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D674200BB0575198145B5455CF13275F /* Assets.bundle */; };
 		151ADE44F01C90A9BE9220ADE2B60C09 /* Pods-myProjectTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E676C419613673CD5A8D9A94BC62689 /* Pods-myProjectTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1787B38DA8D85E7E1E278F4BDFE3F186 /* YTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = DEBDA156CC02CC991093E80B302B887A /* YTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1787B38DA8D85E7E1E278F4BDFE3F186 /* YTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2323480F87F269FE2C2F9DB41585A1AF /* YTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28E163BB2844394A0B5A50A4CFC04A51 /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = BF6FD6A325E434F2B21C925A99806AB4 /* YTPlayerView-iframe-player.html */; };
 		2A2831526E384BDC33778F6BAB9C13F1 /* Pods-myProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1149F7A9AD5E2AE9CF70F19B6B6FA /* Pods-myProject-dummy.m */; };
 		2A99C45A41F48DA0F94C8754D8C882A4 /* Pods-myProject-myProjectUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2D1C309C24574D581222623A421A221 /* Pods-myProject-myProjectUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C2F88A30D2AB4829C25E8E07E59BC49 /* Pods-myProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7DAB47D2424E9D93BB5959FCA803FD /* Pods-myProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF807B11E7981A1A2D01B68716F6456 /* DropDown+Appearance.swift */; };
 		5366C2882BF017DCF8588BBED675F299 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648ABB5B85A4DBB9B8EC537A62822E3F /* DropDownCell.xib */; };
-		74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D5F3E4D43DF7EF8BA61C3988D322CD /* DPDConstants.swift */; };
 		762DD9C87690777941F171A6AE7A2D9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CC8028D9ABF75531F7F357ABD387 /* DropDown.swift */; };
-		89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FCCDC15468FEA82B8E21842209BBDE /* DPDKeyboardListener.swift */; };
-		8F67439CE7C8EC3C26C6BC04B79708E0 /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 106911C4A6BD115BC91853B2F120C228 /* YTPlayerView-iframe-player.html */; };
-		907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF29D9C491124D7FDD7C4EAEBA18F09 /* DropDown-dummy.m */; };
 		AF837A2D2264F740C0B14973CBAD2D1B /* Pods-myProject-myProjectUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9CB719E2402646F5FB7FA9EB224672 /* Pods-myProject-myProjectUITests-dummy.m */; };
-		B329893F915A170B891E3DD77F45B1EC /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1735B775C7D12AB352D1BB9D16B6FC /* YTPlayerView.m */; };
-		B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E64300A9D2645806774E4555D0EB20 /* DPDUIView+Extension.swift */; };
+		B329893F915A170B891E3DD77F45B1EC /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 969BAF7512D597FF26DF01FD48484EC9 /* YTPlayerView.m */; };
 		B7A50B3DBC28260F5201083D26B67E1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2257A8A5972FE4BDA43DEDBFD7F64880 /* DropDownCell.swift */; };
-		DAB517BA1E5F9BC057D50ACF9D7301A6 /* youtube-ios-player-helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 191B1E0627925C781059D7627409CD9B /* youtube-ios-player-helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAC40ABED4AB82922ECFC60D20CC513F /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAB517BA1E5F9BC057D50ACF9D7301A6 /* youtube-ios-player-helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 209C5452BBC501620F98622F2A54C70B /* youtube-ios-player-helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E60CD1ADF6762AE19F8F854ECB4D5C90 /* Pods-myProjectTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9296AB8DA5776C2548B56E9D4E56C825 /* Pods-myProjectTests-dummy.m */; };
-		EF702DFFDA4EB848608C78F1E651DA1D /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD62FDF3FD5CAF89F39A3973F6262AC /* youtube-ios-player-helper-dummy.m */; };
+		EF702DFFDA4EB848608C78F1E651DA1D /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1739D7E0482AE5B53E7CAB64364FB5D2 /* youtube-ios-player-helper-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		104856F865021F207672A53A16028F6C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
-			remoteInfo = DropDown;
-		};
-		1E6E09D850964C9A9136305FA8F6335A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
-			remoteInfo = DropDown;
-		};
-		511521CF77F4B788745482D3E4A4EE92 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D1A7AF186BE136DE56FD5699070589B8;
-			remoteInfo = "youtube-ios-player-helper";
-		};
-		58B1C7AE95E4555282E53BFFD7519230 /* PBXContainerItemProxy */ = {
+		20E70DECA56DAE2A4989C15A312793BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = ACBCA1B460ACCC2DA97758DBE10B1AA8;
 			remoteInfo = "Pods-myProject";
 		};
-		5DF4F52AFCA913DF5F68A895A08DE629 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3820B3D61248CD2A225DA312BC70F110;
-			remoteInfo = "youtube-ios-player-helper-Assets";
-		};
-		BEB7929A237BF39A548DD76FB797C3BD /* PBXContainerItemProxy */ = {
+		48950CEA238382C2B99DA6E20452BF90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D1A7AF186BE136DE56FD5699070589B8;
 			remoteInfo = "youtube-ios-player-helper";
 		};
+		633E8E31F5451E67BFA7F637F10DC2C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1A7AF186BE136DE56FD5699070589B8;
+			remoteInfo = "youtube-ios-player-helper";
+		};
+		79A7D01F3BA58D662397504EFA6847F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
+		AE51073931A9CAD2BEDCBC5470D70779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
+		CFDC8B5F5900A709597F0DD67D87D98C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3820B3D61248CD2A225DA312BC70F110;
+			remoteInfo = "youtube-ios-player-helper-Assets";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08C9A78419A4F90D3E7FF39E88C35A81 /* youtube-ios-player-helper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "youtube-ios-player-helper-Info.plist"; sourceTree = "<group>"; };
-		0EF30A097491E32329B20D277EA6445E /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
 		0F2709542C4FA51DD254801C5C1FF4FA /* Pods-myProject-myProjectUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myProject-myProjectUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		106911C4A6BD115BC91853B2F120C228 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = "YTPlayerView-iframe-player.html"; path = "Sources/Assets/YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
-		191B1E0627925C781059D7627409CD9B /* youtube-ios-player-helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-umbrella.h"; sourceTree = "<group>"; };
-		1D0DBAC3F9022613DB12AB82233BD0A9 /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
-		221AA4848E8EA62F9F5AA382411DE784 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
-		2257A8A5972FE4BDA43DEDBFD7F64880 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		1739D7E0482AE5B53E7CAB64364FB5D2 /* youtube-ios-player-helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "youtube-ios-player-helper-dummy.m"; sourceTree = "<group>"; };
+		209C5452BBC501620F98622F2A54C70B /* youtube-ios-player-helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-umbrella.h"; sourceTree = "<group>"; };
+		2323480F87F269FE2C2F9DB41585A1AF /* YTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = Sources/YTPlayerView.h; sourceTree = "<group>"; };
 		23F55875A1B7DAFAB8940A7269CFBA1E /* Pods-myProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-myProject-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2428CC8028D9ABF75531F7F357ABD387 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
-		28E64300A9D2645806774E4555D0EB20 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
 		3A7DAB47D2424E9D93BB5959FCA803FD /* Pods-myProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-myProject-umbrella.h"; sourceTree = "<group>"; };
 		3B6C90F3266FC8AD4C3C67BD4F66A542 /* Pods-myProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myProject.release.xcconfig"; sourceTree = "<group>"; };
 		3C96C83ADF26730878E3B22D9FA3FE96 /* Pods-myProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E2D5A477FA597E37D5BB55B3F44EA13 /* Pods-myProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		3E676C419613673CD5A8D9A94BC62689 /* Pods-myProjectTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-myProjectTests-umbrella.h"; sourceTree = "<group>"; };
 		3E9CB719E2402646F5FB7FA9EB224672 /* Pods-myProject-myProjectUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-myProject-myProjectUITests-dummy.m"; sourceTree = "<group>"; };
-		442746DA0050C76E252565BA96356890 /* youtube-ios-player-helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.release.xcconfig"; sourceTree = "<group>"; };
 		444E66DBF6A1BA0F63937588B51D3EE6 /* Pods-myProject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myProject-Info.plist"; sourceTree = "<group>"; };
 		49468C0905A70AD39B491DDDA66704A4 /* Pods-myProject-myProjectUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-myProject-myProjectUITests.modulemap"; sourceTree = "<group>"; };
 		5ADE908374293D0A6F6D0106C1183D14 /* Pods-myProject-myProjectUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-myProject-myProjectUITests"; path = Pods_myProject_myProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C65B8FB66398830D82C86A1F5C9B5E3 /* Pods-myProject-myProjectUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-myProject-myProjectUITests-frameworks.sh"; sourceTree = "<group>"; };
 		6405447DA8CA33FD760E76488C14D610 /* Pods-myProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-myProject.modulemap"; sourceTree = "<group>"; };
-		648ABB5B85A4DBB9B8EC537A62822E3F /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		6EB084C8AC6873D7F75BE2A10A48C528 /* youtube-ios-player-helper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "youtube-ios-player-helper-Info.plist"; sourceTree = "<group>"; };
 		6F9E4AF545AF5227796231CFB689DF78 /* Pods-myProject */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-myProject"; path = Pods_myProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		746CB5DEC185ADCC730B48C07BE4D275 /* Pods-myProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-myProject-frameworks.sh"; sourceTree = "<group>"; };
-		7FA8A3223D44F6F03B19BFF87226108B /* youtube-ios-player-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.debug.xcconfig"; sourceTree = "<group>"; };
 		8498A1B2C60117E181CA67921DDAE0B6 /* youtube-ios-player-helper */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "youtube-ios-player-helper"; path = youtube_ios_player_helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D9B872879557CBE8F2394EF8E8629D /* Pods-myProjectTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myProjectTests-Info.plist"; sourceTree = "<group>"; };
 		9296AB8DA5776C2548B56E9D4E56C825 /* Pods-myProjectTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-myProjectTests-dummy.m"; sourceTree = "<group>"; };
+		94900C492E1A87AE5E3D3A33D97D5AE4 /* youtube-ios-player-helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-prefix.pch"; sourceTree = "<group>"; };
+		969BAF7512D597FF26DF01FD48484EC9 /* YTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = Sources/YTPlayerView.m; sourceTree = "<group>"; };
 		9865F398F3C6F59FEE7F40F0443E5D30 /* Pods-myProjectTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-myProjectTests.modulemap"; sourceTree = "<group>"; };
-		9B6725B782188F18CB76A740433F14E4 /* DropDown */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B8896EDA165A0977BFD29BFC8067AC4 /* ResourceBundle-Assets-youtube-ios-player-helper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Assets-youtube-ios-player-helper-Info.plist"; sourceTree = "<group>"; };
-		9CD62FDF3FD5CAF89F39A3973F6262AC /* youtube-ios-player-helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "youtube-ios-player-helper-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FD1149F7A9AD5E2AE9CF70F19B6B6FA /* Pods-myProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-myProject-dummy.m"; sourceTree = "<group>"; };
 		A55E010EC6889D6B89DD77F3503E89F2 /* Pods-myProject-myProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myProject-myProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A6D5F3E4D43DF7EF8BA61C3988D322CD /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
-		ABF29D9C491124D7FDD7C4EAEBA18F09 /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
-		AE79559DAC6A0B023FF219B58ECFFCD5 /* youtube-ios-player-helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "youtube-ios-player-helper.modulemap"; sourceTree = "<group>"; };
-		BAC40ABED4AB82922ECFC60D20CC513F /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
-		BC1735B775C7D12AB352D1BB9D16B6FC /* YTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = Sources/YTPlayerView.m; sourceTree = "<group>"; };
+		B782D73684F968120F14E8CEDA5A7296 /* youtube-ios-player-helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "youtube-ios-player-helper.modulemap"; sourceTree = "<group>"; };
 		BC5C4D015E099B05CA1C6D26F619F77B /* Pods-myProject-myProjectUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-myProject-myProjectUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C2EB6D1513C42D8B9DBB297BA7FAF6B1 /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
+		BC617C507D8B936613737689E4813D64 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
+		BD71EC64417F2251FEC5A244C22CD207 /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
+		BF6FD6A325E434F2B21C925A99806AB4 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = "YTPlayerView-iframe-player.html"; path = "Sources/Assets/YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
 		CBB0BD7CA7779968508248C06DA2837A /* Pods-myProject-myProjectUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myProject-myProjectUITests-Info.plist"; sourceTree = "<group>"; };
 		CD230D9F05E211B05FC3153182281580 /* Pods-myProject-myProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myProject-myProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
-		CEF807B11E7981A1A2D01B68716F6456 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
 		D04FF4EB0FF80DB022863A30B2C0F88B /* Pods-myProjectTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-myProjectTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D674200BB0575198145B5455CF13275F /* Assets.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assets.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8FCCDC15468FEA82B8E21842209BBDE /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
 		DEAD551FC043B4F97C2BC669C8940BBE /* Pods-myProjectTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myProjectTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DEBDA156CC02CC991093E80B302B887A /* YTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = Sources/YTPlayerView.h; sourceTree = "<group>"; };
+		DF984B4EE5A404E32AD0C4836F834A75 /* ResourceBundle-Assets-youtube-ios-player-helper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Assets-youtube-ios-player-helper-Info.plist"; sourceTree = "<group>"; };
 		EA0429708F105F671FF7DC77EDB65CF2 /* Pods-myProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myProject-acknowledgements.plist"; sourceTree = "<group>"; };
-		EAAAFCD1EE2927B04C478189CCAC5896 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
 		ED9F25FFC66EE180756A36EF1C995216 /* Pods-myProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myProject.debug.xcconfig"; sourceTree = "<group>"; };
+		EDF84FD7FB6E30C4E095E260C8CBDF77 /* youtube-ios-player-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.debug.xcconfig"; sourceTree = "<group>"; };
 		F2D1C309C24574D581222623A421A221 /* Pods-myProject-myProjectUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-myProject-myProjectUITests-umbrella.h"; sourceTree = "<group>"; };
-		F682758509B3A4A104C0EE631DBFB61E /* youtube-ios-player-helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-prefix.pch"; sourceTree = "<group>"; };
+		F32340392F01A833BB6BDE3D0529DE90 /* youtube-ios-player-helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.release.xcconfig"; sourceTree = "<group>"; };
 		FE2C38540E2E0C6C977B27D751F6974B /* Pods-myProjectTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-myProjectTests"; path = Pods_myProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -148,14 +138,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5366C2882BF017DCF8588BBED675F299 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		808BE4E171BD75B6477EC2B77490C2B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +157,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F3CCD1C497224C64ADE068B3F23DB5F /* Frameworks */ = {
+		D625AF3A4B2F45DC57B0F79EFAE40697 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,25 +175,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		017FA980AAD75EF8F9FBA29536582D3F /* youtube-ios-player-helper */ = {
-			isa = PBXGroup;
-			children = (
-				DEBDA156CC02CC991093E80B302B887A /* YTPlayerView.h */,
-				BC1735B775C7D12AB352D1BB9D16B6FC /* YTPlayerView.m */,
-				C933D8E08488301D714BF92D9253CD26 /* Resources */,
-				ABB6056D7983EA24BAA37C2F81E5315E /* Support Files */,
-			);
-			path = "youtube-ios-player-helper";
-			sourceTree = "<group>";
-		};
-		18E01B28C557CD712C26BD277D6ADCD1 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				648ABB5B85A4DBB9B8EC537A62822E3F /* DropDownCell.xib */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		22DC510622D31249B070414235DED0FD /* Pods-myProjectTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,19 +191,31 @@
 			path = "Target Support Files/Pods-myProjectTests";
 			sourceTree = "<group>";
 		};
-		2F39E5DCA245C1D65B4991AACE6F2039 /* DropDown */ = {
+		307F99E5D6756AF7FA1171AE26F4E07D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A6D5F3E4D43DF7EF8BA61C3988D322CD /* DPDConstants.swift */,
-				D8FCCDC15468FEA82B8E21842209BBDE /* DPDKeyboardListener.swift */,
-				28E64300A9D2645806774E4555D0EB20 /* DPDUIView+Extension.swift */,
-				2428CC8028D9ABF75531F7F357ABD387 /* DropDown.swift */,
-				CEF807B11E7981A1A2D01B68716F6456 /* DropDown+Appearance.swift */,
-				2257A8A5972FE4BDA43DEDBFD7F64880 /* DropDownCell.swift */,
-				18E01B28C557CD712C26BD277D6ADCD1 /* Resources */,
-				6CB6A07980C039D4377FF23C55E7D578 /* Support Files */,
+				F9B573BE6B6AC1489CD39E56FBA14CF0 /* DropDown */,
+				ABB1A64D0060BC56F4B62378540A3F2B /* youtube-ios-player-helper */,
 			);
-			path = DropDown;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		378329872396419F701439039EB4A45C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF6FD6A325E434F2B21C925A99806AB4 /* YTPlayerView-iframe-player.html */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3A3E175D38573DDE0712AC2B533179C8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD71EC64417F2251FEC5A244C22CD207 /* DropDown.debug.xcconfig */,
+				BC617C507D8B936613737689E4813D64 /* DropDown.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
 			sourceTree = "<group>";
 		};
 		4023BB12C5823CC3AA785A2F44B32A97 /* Pods-myProject-myProjectUITests */ = {
@@ -278,10 +253,20 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		594DA89328F1E4604156BFADEC1E761E /* Products */ = {
+		ABB1A64D0060BC56F4B62378540A3F2B /* youtube-ios-player-helper */ = {
 			isa = PBXGroup;
 			children = (
-				9B6725B782188F18CB76A740433F14E4 /* DropDown */,
+				2323480F87F269FE2C2F9DB41585A1AF /* YTPlayerView.h */,
+				969BAF7512D597FF26DF01FD48484EC9 /* YTPlayerView.m */,
+				378329872396419F701439039EB4A45C /* Resources */,
+				DC5045ADB52FC94D74A4F47FB51FFBA8 /* Support Files */,
+			);
+			path = "youtube-ios-player-helper";
+			sourceTree = "<group>";
+		};
+		B955B8548F2EF542B46B8F9E366EC2DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
 				6F9E4AF545AF5227796231CFB689DF78 /* Pods-myProject */,
 				5ADE908374293D0A6F6D0106C1183D14 /* Pods-myProject-myProjectUITests */,
 				FE2C38540E2E0C6C977B27D751F6974B /* Pods-myProjectTests */,
@@ -291,61 +276,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6CB6A07980C039D4377FF23C55E7D578 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EAAAFCD1EE2927B04C478189CCAC5896 /* DropDown.modulemap */,
-				ABF29D9C491124D7FDD7C4EAEBA18F09 /* DropDown-dummy.m */,
-				1D0DBAC3F9022613DB12AB82233BD0A9 /* DropDown-Info.plist */,
-				0EF30A097491E32329B20D277EA6445E /* DropDown-prefix.pch */,
-				BAC40ABED4AB82922ECFC60D20CC513F /* DropDown-umbrella.h */,
-				C2EB6D1513C42D8B9DBB297BA7FAF6B1 /* DropDown.debug.xcconfig */,
-				221AA4848E8EA62F9F5AA382411DE784 /* DropDown.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DropDown";
-			sourceTree = "<group>";
-		};
-		A55522E852971191C563AB0DF980B58C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2F39E5DCA245C1D65B4991AACE6F2039 /* DropDown */,
-				017FA980AAD75EF8F9FBA29536582D3F /* youtube-ios-player-helper */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		ABB6056D7983EA24BAA37C2F81E5315E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9B8896EDA165A0977BFD29BFC8067AC4 /* ResourceBundle-Assets-youtube-ios-player-helper-Info.plist */,
-				AE79559DAC6A0B023FF219B58ECFFCD5 /* youtube-ios-player-helper.modulemap */,
-				9CD62FDF3FD5CAF89F39A3973F6262AC /* youtube-ios-player-helper-dummy.m */,
-				08C9A78419A4F90D3E7FF39E88C35A81 /* youtube-ios-player-helper-Info.plist */,
-				F682758509B3A4A104C0EE631DBFB61E /* youtube-ios-player-helper-prefix.pch */,
-				191B1E0627925C781059D7627409CD9B /* youtube-ios-player-helper-umbrella.h */,
-				7FA8A3223D44F6F03B19BFF87226108B /* youtube-ios-player-helper.debug.xcconfig */,
-				442746DA0050C76E252565BA96356890 /* youtube-ios-player-helper.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/youtube-ios-player-helper";
-			sourceTree = "<group>";
-		};
-		C933D8E08488301D714BF92D9253CD26 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				106911C4A6BD115BC91853B2F120C228 /* YTPlayerView-iframe-player.html */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				A55522E852971191C563AB0DF980B58C /* Pods */,
-				594DA89328F1E4604156BFADEC1E761E /* Products */,
+				307F99E5D6756AF7FA1171AE26F4E07D /* Pods */,
+				B955B8548F2EF542B46B8F9E366EC2DC /* Products */,
 				57713FCE5D9A199CF231077E50AB8556 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -356,6 +293,22 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC5045ADB52FC94D74A4F47FB51FFBA8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF984B4EE5A404E32AD0C4836F834A75 /* ResourceBundle-Assets-youtube-ios-player-helper-Info.plist */,
+				B782D73684F968120F14E8CEDA5A7296 /* youtube-ios-player-helper.modulemap */,
+				1739D7E0482AE5B53E7CAB64364FB5D2 /* youtube-ios-player-helper-dummy.m */,
+				6EB084C8AC6873D7F75BE2A10A48C528 /* youtube-ios-player-helper-Info.plist */,
+				94900C492E1A87AE5E3D3A33D97D5AE4 /* youtube-ios-player-helper-prefix.pch */,
+				209C5452BBC501620F98622F2A54C70B /* youtube-ios-player-helper-umbrella.h */,
+				EDF84FD7FB6E30C4E095E260C8CBDF77 /* youtube-ios-player-helper.debug.xcconfig */,
+				F32340392F01A833BB6BDE3D0529DE90 /* youtube-ios-player-helper.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/youtube-ios-player-helper";
 			sourceTree = "<group>";
 		};
 		E8C50CEE378E4983228FB7F74306D215 /* Pods-myProject */ = {
@@ -373,6 +326,14 @@
 			);
 			name = "Pods-myProject";
 			path = "Target Support Files/Pods-myProject";
+			sourceTree = "<group>";
+		};
+		F9B573BE6B6AC1489CD39E56FBA14CF0 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				3A3E175D38573DDE0712AC2B533179C8 /* Support Files */,
+			);
+			path = DropDown;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,14 +364,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97CE91431E229797751455423C79CA4F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		ED2F3F803A75D3446DBE6F3AF27265B8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,11 +377,11 @@
 /* Begin PBXNativeTarget section */
 		3820B3D61248CD2A225DA312BC70F110 /* youtube-ios-player-helper-Assets */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 806C08D958E248C2B3E953DB7C2DB838 /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper-Assets" */;
+			buildConfigurationList = 7C59C3DB309879332D1340E0A86B902B /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper-Assets" */;
 			buildPhases = (
-				7518A9CAFD2D17F7698271CC6B998025 /* Sources */,
-				9F3CCD1C497224C64ADE068B3F23DB5F /* Frameworks */,
-				F25F0215AB8878FE08ED4443E3A7B7E1 /* Resources */,
+				EDE73E9AB6B5CC710F2D787F69737592 /* Sources */,
+				D625AF3A4B2F45DC57B0F79EFAE40697 /* Frameworks */,
+				F916845B310AB370C5100D80C8F68D62 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -451,7 +404,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A0048A0526B0225454845DB650D285EB /* PBXTargetDependency */,
+				EE91F159808A86354E8A15E508DB6081 /* PBXTargetDependency */,
 			);
 			name = "Pods-myProjectTests";
 			productName = Pods_myProjectTests;
@@ -470,8 +423,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				5163406E3AA4DDE5B47E56F7C50E0642 /* PBXTargetDependency */,
-				CE2A364DA3A5B66A26981385C8BC4E79 /* PBXTargetDependency */,
+				C931A39E19D817E04282EFFF37C740B5 /* PBXTargetDependency */,
+				46AA89AC7D68E8EF79676C34FE13F61B /* PBXTargetDependency */,
 			);
 			name = "Pods-myProject-myProjectUITests";
 			productName = Pods_myProject_myProjectUITests;
@@ -490,8 +443,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				8220A05E7C8DAB310617CBAA92E890A8 /* PBXTargetDependency */,
-				A7D1F8F92A93CC2762D4E7B297E2C3E8 /* PBXTargetDependency */,
+				EA154A00239C8E24EF40B5BB0704F56B /* PBXTargetDependency */,
+				C07942ABE70785619475C8B160DB942F /* PBXTargetDependency */,
 			);
 			name = "Pods-myProject";
 			productName = Pods_myProject;
@@ -510,29 +463,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				F73081D6DEC80D051E8717F870C29615 /* PBXTargetDependency */,
+				176C8613197BA348435669CB12A0C518 /* PBXTargetDependency */,
 			);
 			name = "youtube-ios-player-helper";
 			productName = youtube_ios_player_helper;
 			productReference = 8498A1B2C60117E181CA67921DDAE0B6 /* youtube-ios-player-helper */;
-			productType = "com.apple.product-type.framework";
-		};
-		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53052E6CBA1E65D6EF818199E617AC68 /* Build configuration list for PBXNativeTarget "DropDown" */;
-			buildPhases = (
-				97CE91431E229797751455423C79CA4F /* Headers */,
-				48864C435B3DB37698CF568C638CF98F /* Sources */,
-				808BE4E171BD75B6477EC2B77490C2B1 /* Frameworks */,
-				EFDE5B37A62BFF2F9A9BD2023B960CD7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DropDown;
-			productName = DropDown;
-			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -553,7 +488,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 594DA89328F1E4604156BFADEC1E761E /* Products */;
+			productRefGroup = B955B8548F2EF542B46B8F9E366EC2DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -590,14 +525,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFDE5B37A62BFF2F9A9BD2023B960CD7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F0FA174688ED3AE14FB9176E9712B38E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -605,11 +532,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F25F0215AB8878FE08ED4443E3A7B7E1 /* Resources */ = {
+		F916845B310AB370C5100D80C8F68D62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F67439CE7C8EC3C26C6BC04B79708E0 /* YTPlayerView-iframe-player.html in Resources */,
+				28E163BB2844394A0B5A50A4CFC04A51 /* YTPlayerView-iframe-player.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,27 +548,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2831526E384BDC33778F6BAB9C13F1 /* Pods-myProject-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48864C435B3DB37698CF568C638CF98F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */,
-				89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */,
-				B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */,
-				84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */,
-				515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */,
-				907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */,
-				BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7518A9CAFD2D17F7698271CC6B998025 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +568,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDE73E9AB6B5CC710F2D787F69737592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F9D4B225356FED5B2590A3FD47E450CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -673,41 +586,41 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5163406E3AA4DDE5B47E56F7C50E0642 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DropDown;
-			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
-			targetProxy = 104856F865021F207672A53A16028F6C /* PBXContainerItemProxy */;
-		};
-		8220A05E7C8DAB310617CBAA92E890A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DropDown;
-			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
-			targetProxy = 1E6E09D850964C9A9136305FA8F6335A /* PBXContainerItemProxy */;
-		};
-		A0048A0526B0225454845DB650D285EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-myProject";
-			target = ACBCA1B460ACCC2DA97758DBE10B1AA8 /* Pods-myProject */;
-			targetProxy = 58B1C7AE95E4555282E53BFFD7519230 /* PBXContainerItemProxy */;
-		};
-		A7D1F8F92A93CC2762D4E7B297E2C3E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "youtube-ios-player-helper";
-			target = D1A7AF186BE136DE56FD5699070589B8 /* youtube-ios-player-helper */;
-			targetProxy = 511521CF77F4B788745482D3E4A4EE92 /* PBXContainerItemProxy */;
-		};
-		CE2A364DA3A5B66A26981385C8BC4E79 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "youtube-ios-player-helper";
-			target = D1A7AF186BE136DE56FD5699070589B8 /* youtube-ios-player-helper */;
-			targetProxy = BEB7929A237BF39A548DD76FB797C3BD /* PBXContainerItemProxy */;
-		};
-		F73081D6DEC80D051E8717F870C29615 /* PBXTargetDependency */ = {
+		176C8613197BA348435669CB12A0C518 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "youtube-ios-player-helper-Assets";
 			target = 3820B3D61248CD2A225DA312BC70F110 /* youtube-ios-player-helper-Assets */;
-			targetProxy = 5DF4F52AFCA913DF5F68A895A08DE629 /* PBXContainerItemProxy */;
+			targetProxy = CFDC8B5F5900A709597F0DD67D87D98C /* PBXContainerItemProxy */;
+		};
+		46AA89AC7D68E8EF79676C34FE13F61B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "youtube-ios-player-helper";
+			target = D1A7AF186BE136DE56FD5699070589B8 /* youtube-ios-player-helper */;
+			targetProxy = 48950CEA238382C2B99DA6E20452BF90 /* PBXContainerItemProxy */;
+		};
+		C07942ABE70785619475C8B160DB942F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "youtube-ios-player-helper";
+			target = D1A7AF186BE136DE56FD5699070589B8 /* youtube-ios-player-helper */;
+			targetProxy = 633E8E31F5451E67BFA7F637F10DC2C0 /* PBXContainerItemProxy */;
+		};
+		C931A39E19D817E04282EFFF37C740B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = 79A7D01F3BA58D662397504EFA6847F9 /* PBXContainerItemProxy */;
+		};
+		EA154A00239C8E24EF40B5BB0704F56B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = AE51073931A9CAD2BEDCBC5470D70779 /* PBXContainerItemProxy */;
+		};
+		EE91F159808A86354E8A15E508DB6081 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-myProject";
+			target = ACBCA1B460ACCC2DA97758DBE10B1AA8 /* Pods-myProject */;
+			targetProxy = 20E70DECA56DAE2A4989C15A312793BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -818,7 +731,7 @@
 		};
 		5D9FC5EAAE5F46050FA73E4AD36E758A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FA8A3223D44F6F03B19BFF87226108B /* youtube-ios-player-helper.debug.xcconfig */;
+			baseConfigurationReference = EDF84FD7FB6E30C4E095E260C8CBDF77 /* youtube-ios-player-helper.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -851,26 +764,9 @@
 			};
 			name = Debug;
 		};
-		7289726DA74CE70B0C9D616B5E639F19 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 442746DA0050C76E252565BA96356890 /* youtube-ios-player-helper.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/youtube-ios-player-helper";
-				DEVELOPMENT_TEAM = 29WQLXLW8H;
-				IBSC_MODULE = youtube_ios_player_helper;
-				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/ResourceBundle-Assets-youtube-ios-player-helper-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = Assets;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		809719E17778775AAD817D885191A198 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 442746DA0050C76E252565BA96356890 /* youtube-ios-player-helper.release.xcconfig */;
+			baseConfigurationReference = F32340392F01A833BB6BDE3D0529DE90 /* youtube-ios-player-helper.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1079,38 +975,70 @@
 			};
 			name = Release;
 		};
-		C24518E891FAA59668669823639498EB /* Release */ = {
+		A0DC24C7BD24CEB9DEE26BEA0305AA5F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 221AA4848E8EA62F9F5AA382411DE784 /* DropDown.release.xcconfig */;
+			baseConfigurationReference = EDF84FD7FB6E30C4E095E260C8CBDF77 /* youtube-ios-player-helper.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/youtube-ios-player-helper";
+				DEVELOPMENT_TEAM = 29WQLXLW8H;
+				IBSC_MODULE = youtube_ios_player_helper;
+				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/ResourceBundle-Assets-youtube-ios-player-helper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = Assets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		AD8696AB69F7C94356021794EAEC079F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD71EC64417F2251FEC5A244C22CD207 /* DropDown.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
-				PRODUCT_MODULE_NAME = DropDown;
-				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9EDC0984AC8B73BEF7E75326775B0C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F32340392F01A833BB6BDE3D0529DE90 /* youtube-ios-player-helper.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/youtube-ios-player-helper";
+				DEVELOPMENT_TEAM = 29WQLXLW8H;
+				IBSC_MODULE = youtube_ios_player_helper;
+				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/ResourceBundle-Assets-youtube-ios-player-helper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = Assets;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C5983B9F7CCC769603E1A4E6F31BD30E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC617C507D8B936613737689E4813D64 /* DropDown.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1148,57 +1076,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2EB6D1513C42D8B9DBB297BA7FAF6B1 /* DropDown.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
-				PRODUCT_MODULE_NAME = DropDown;
-				PRODUCT_NAME = DropDown;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E94C82AE22E352DE67163DF20FC23ABA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FA8A3223D44F6F03B19BFF87226108B /* youtube-ios-player-helper.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/youtube-ios-player-helper";
-				DEVELOPMENT_TEAM = 29WQLXLW8H;
-				IBSC_MODULE = youtube_ios_player_helper;
-				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/ResourceBundle-Assets-youtube-ios-player-helper-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = Assets;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -1260,20 +1137,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		53052E6CBA1E65D6EF818199E617AC68 /* Build configuration list for PBXNativeTarget "DropDown" */ = {
+		7C59C3DB309879332D1340E0A86B902B /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper-Assets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */,
-				C24518E891FAA59668669823639498EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		806C08D958E248C2B3E953DB7C2DB838 /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper-Assets" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E94C82AE22E352DE67163DF20FC23ABA /* Debug */,
-				7289726DA74CE70B0C9D616B5E639F19 /* Release */,
+				A0DC24C7BD24CEB9DEE26BEA0305AA5F /* Debug */,
+				B9EDC0984AC8B73BEF7E75326775B0C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1283,6 +1151,15 @@
 			buildConfigurations = (
 				5D9FC5EAAE5F46050FA73E4AD36E758A /* Debug */,
 				809719E17778775AAD817D885191A198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9B510EF30FAA1AED202391C7B2063FB /* Build configuration list for PBXAggregateTarget "DropDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8696AB69F7C94356021794EAEC079F /* Debug */,
+				C5983B9F7CCC769603E1A4E6F31BD30E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

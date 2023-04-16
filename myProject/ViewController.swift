@@ -13,9 +13,14 @@ import CoreData
 
 class ViewController: UIViewController {
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //let rootVC = SecondViewController()
+        //let navVC = UINavigationController(rootViewController: rootVC)
+        //present(navVC, animated: true)
+        
         view.backgroundColor = EAgreen
         
         view.addSubview(gearButton)
@@ -25,18 +30,18 @@ class ViewController: UIViewController {
         view.addSubview(phoneButton)
         view.addSubview(homeButton)
         view.addSubview(pageTitle)
-
+        
         addConstraints()
     }
     
     let pageTitle: UILabel = {
-       let pageTitle = UILabel()
+        let pageTitle = UILabel()
         pageTitle.text = "Effortless Adventure"
         pageTitle.textColor = EAyellow
         pageTitle.font = .boldSystemFont(ofSize: 20)
         pageTitle.textAlignment = .center
         pageTitle.translatesAutoresizingMaskIntoConstraints = false    //autolayout
-
+        
         return pageTitle
     }()
     
@@ -102,8 +107,6 @@ class ViewController: UIViewController {
         homeButton.setTitle("home", for: .normal)
         homeButton.setImage(logo, for: .normal)
         homeButton.translatesAutoresizingMaskIntoConstraints = false    //autolayout
-
-        homeButton.addTarget(self, action: #selector(homeTapped), for: .touchUpInside)
         return homeButton
     }()
     
@@ -138,61 +141,12 @@ class ViewController: UIViewController {
         UIApplication.shared.open(phoneNumber)
     }
     
-    @objc func homeTapped() {
-        let home_vc = ViewController()
-        home_vc.modalPresentationStyle = .fullScreen
-        home_vc.modalTransitionStyle = .crossDissolve
-        present(home_vc, animated: true)
-    }
-    
-   
     private func addConstraints() {
         var constraints = [NSLayoutConstraint]()
-        //gear button
-        //constraints.append(gearButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 30 ))
-        //constraints.append(gearButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30))
-        //constraints.append(gearButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -525))
-        constraints.append(gearButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80))
-        constraints.append(gearButton.centerXAnchor.constraint(equalTo: view.centerXAnchor))
-        constraints.append(gearButton.widthAnchor.constraint(equalToConstant: 320))
-        constraints.append(gearButton.heightAnchor.constraint(equalToConstant: 190))
-        
-        //adven button
-        //constraints.append(advenButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 30))
-        //constraints.append(advenButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30))
-        //constraints.append(advenButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -305))
-        //constraints.append(advenButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 280))
-        constraints.append(advenButton.topAnchor.constraint(equalTo: gearButton.bottomAnchor, constant: 30))
-        constraints.append(advenButton.centerXAnchor.constraint(equalTo: view.centerXAnchor))
-        constraints.append(advenButton.widthAnchor.constraint(equalToConstant: 320))
-        constraints.append(advenButton.heightAnchor.constraint(equalToConstant: 190))
-        
-        //how button
-        //constraints.append(howButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 30))
-        //constraints.append(howButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30))
-        //constraints.append(howButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -85))
-        //constraints.append(howButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 500))
-        constraints.append(howButton.topAnchor.constraint(equalTo: advenButton.bottomAnchor, constant: 30))
-        constraints.append(howButton.centerXAnchor.constraint(equalTo: view.centerXAnchor))
-        constraints.append(howButton.widthAnchor.constraint(equalToConstant: 320))
-        constraints.append(howButton.heightAnchor.constraint(equalToConstant: 190))
-        
-        
-        //faq button
-        constraints.append(FAQButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 60))
-        constraints.append(FAQButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -300))
-        constraints.append(FAQButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50))
-        constraints.append(FAQButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 750))
-        
-        //phone button
-        constraints.append(phoneButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 270))
-        constraints.append(phoneButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -45))
-        constraints.append(phoneButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50))
-        constraints.append(phoneButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 750))
         
         //page title
         constraints.append(pageTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor))
-        constraints.append(pageTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30))
+        constraints.append(pageTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80))
         
         //home button
         constraints.append(homeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor))
@@ -200,10 +154,37 @@ class ViewController: UIViewController {
         constraints.append(homeButton.widthAnchor.constraint(equalToConstant: 75))
         constraints.append(homeButton.heightAnchor.constraint(equalToConstant: 75))
         
+        //gear button
+        constraints.append(gearButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 140))
+        constraints.append(gearButton.centerXAnchor.constraint(equalTo: view.centerXAnchor))
+        constraints.append(gearButton.widthAnchor.constraint(equalToConstant: 320))
+        constraints.append(gearButton.heightAnchor.constraint(equalToConstant: 190))
+        
+        //adven button
+        constraints.append(advenButton.topAnchor.constraint(equalTo: gearButton.bottomAnchor, constant: 30))
+        constraints.append(advenButton.centerXAnchor.constraint(equalTo: view.centerXAnchor))
+        constraints.append(advenButton.widthAnchor.constraint(equalToConstant: 320))
+        constraints.append(advenButton.heightAnchor.constraint(equalToConstant: 190))
+        
+        //how button
+        constraints.append(howButton.topAnchor.constraint(equalTo: advenButton.bottomAnchor, constant: 30))
+        constraints.append(howButton.centerXAnchor.constraint(equalTo: view.centerXAnchor))
+        constraints.append(howButton.widthAnchor.constraint(equalToConstant: 320))
+        constraints.append(howButton.heightAnchor.constraint(equalToConstant: 190))
+        
+        //faq button
+        constraints.append(FAQButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 40))
+        constraints.append(FAQButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -290))
+        constraints.append(FAQButton.topAnchor.constraint(equalTo: howButton.bottomAnchor, constant: 35))
+        
+        //phone button
+        constraints.append(phoneButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 270))
+        constraints.append(phoneButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -45))
+        
+        constraints.append(phoneButton.topAnchor.constraint(equalTo: howButton.bottomAnchor, constant: 35))
+        
+        
         NSLayoutConstraint.activate(constraints)
     }
     
-    }
-    
-
-
+}
